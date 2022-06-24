@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](//content/images/Captura%20de%20Tela%20(2).png)
+![](//Captura%20de%20Tela%20(3).png)
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/nft-preview-card-with-css-custom-properties-vC9orhzEDu)
-- Live Site URL: (https://codeybrodey.github.io/NFT-preview-card/)
+- Solution URL: (https://github.com/CodeyBrodey/Order-Summary-Component)
+- Live Site URL: (https://codeybrodey.github.io/Order-Summary-Component/)
 
 ## My process
 
@@ -41,8 +41,4 @@ Users should be able to:
 
 ### What I learned
 
-Got some needed practice with box-shadows and learned how to make a hover overlay a picture.
-
-### Continued development
-
-I would like to practice more with box-shadowing as it still isnt familiar
+Just some all around good practice, keeping what I learned brushed up.
