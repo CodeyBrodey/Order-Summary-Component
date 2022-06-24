@@ -1,0 +1,152 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue:  hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --ff-body: "Red Hat Display", sans-serif;
+}
+
+/*general*/
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--ff-body);
+    background-color: var(--pale-blue);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1em 0;
+}
+
+p{
+    color: var(--desaturated-blue);
+    font-size: 1rem;
+}
+
+button{
+    border: none;
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1em 0;
+    color: #fff;
+    background-color: var(--bright-blue);
+    border-radius: 2vh;
+    box-shadow: 0 1em 30px #aaa;
+}
+
+a{
+    color: var(--bright-blue);
+}
+
+a:hover, button:hover{
+    opacity: 60%;
+}
+
+/*background*/
+
+#background-desktop{
+    display: none;
+}
+
+#background-mobile, #background-desktop{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/*card*/
+
+.card{
+    text-align: center;
+    background-color: #fff;
+    max-width: 350px;
+    border-radius: 5vh;
+    box-shadow: 0 1em 30px hsl(225, 100%, 86%);
+}
+
+.card-container{
+    min-height: 100vh;
+}
+
+#illustration-img{
+    width: 100%;
+    border-radius: 5vh 5vh 0 0;
+}
+
+.description{
+    line-height: 1.6;
+}
+
+.review-container{
+    background-color: var(--very-pale-blue);
+    margin: 2em auto;
+    border-radius: 2vh;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.type{
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.order-details{
+    justify-content: space-between;
+    gap: 1em;
+}
+
+#change-btn{
+    font-weight: 700;
+}
+
+#change-btn:hover{
+    text-decoration: none;
+}
+
+.cancel-btn{
+    display: block;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    width: fit-content;
+    margin: 2em auto;
+}
+
+.cancel-btn:hover{
+    opacity: 100%;
+    color: var(--dark-blue);
+}
+
+
+@media (min-width:900px){
+    .card{
+        min-width: 450px;
+        border-radius: 3vh;
+    }
+
+    #illustration-img{
+        border-radius: 3vh 3vh 0 0;
+    }
+}
